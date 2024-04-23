@@ -875,7 +875,7 @@ ul{
  *******************************************************/
 .clv_counter_wrapper{
 	position: relative;
-	background: url('../images/banner/1920x1080/02.jpg') no-repeat center;
+	background: url('../images/banner/bg-count.jpg') no-repeat center;
 	background-size: cover;
 	padding: 88px 0px 96px;
 	z-index: 1;
@@ -972,34 +972,15 @@ ul{
 .about_farm_wrapper .about_content .clv_btn{
 	margin-top: 9px;
 }
-.about_farm_wrapper .about_img img{
+.about_farm_wrapper .about_img iframe{
 	border-radius: 10px;
 	width: 100%;
 }
 .about_farm_wrapper .about_img{
 	position: relative;
 }
-.about_farm_wrapper .about_img .about_img_details{
-	width: 100%;
-    max-width: 470px;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: -80px;
-    background-color: #fec007;
-    padding: 30px 50px;
-    text-align: center;
-    position: relative;
-}
-.about_farm_wrapper .about_img .about_img_details h3{
-	font-size: 20px;
-	color: #ffffff;
-	font-weight: 600;
-}
-.about_farm_wrapper .about_img .about_img_details h1{
-	font-size: 40px;
-	color: #ffffff;
-	font-weight: 600;
-}
+
+
 /********************************************************
 6. about farm end
 *******************************************************/
