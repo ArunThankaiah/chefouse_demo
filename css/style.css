@@ -8,6 +8,7 @@
 	line-height:1.5;
 	font-weight: 400;
 	overflow-x: hidden;
+	background: rgba(0,0,0,0.9);
 }
 *,*:before,*:after{
 	box-sizing: border-box;
@@ -785,7 +786,7 @@ ul{
 4. about start
  *******************************************************/
 .index_v1 .clv_about_wrapper{
-	background-image: url('../images/banner/1920x1080/bg_4.jpg');
+	background-image: url('../images/banner/bg_01.jpg');
 	background-size: contain;
 }
 .clv_about_wrapper .about_img img{
@@ -876,7 +877,7 @@ ul{
  *******************************************************/
 .clv_counter_wrapper{
 	position: relative;
-	background: url('../images/banner/bg-count.jpg') no-repeat center;
+	background: url('../images/banner/bg_02.jpg') no-repeat center;
 	background-size: cover;
 	padding: 88px 0px 96px;
 	z-index: 1;
@@ -991,17 +992,14 @@ ul{
 *******************************************************/
 .clv_service_wrapper{
 	position: relative;
-	background-image: url("../images/product/bg-pro.jpg" ) cover repa;
+	background-image: url("../images/banner/bg_01.jpg")  ;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	padding-top: 90px;
 	padding-bottom: 70px;
 }
-.clv_service_wrapper .service_girl_img{
-	position: absolute;
-    bottom: -70px;
-    right: -253px;
-    display: inline-block;
-	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
-}
+
 .service_main_wrapper{
 	margin-top: 25px;
 }
@@ -1089,12 +1087,13 @@ ul{
 /********************************************************
 7. service end
 *******************************************************/
+
 /********************************************************
 8. testimonial start
 *******************************************************/
 .clv_testimonial_wrapper{
 	position: relative;
-	background: url('../images/banner/cookie.jpg') no-repeat center;
+	background: url('../images/banner/bg_02.jpg') no-repeat center;
 	background-size: cover;
 	z-index: 1;
 	padding: 90px 0px 60px;
@@ -1610,8 +1609,8 @@ ul{
 12. team start
 *******************************************************/
 .index_v1 .clv_team_wrapper{
-	/* background-image: url('../images/banner/bg_products.jpg	'); */
-	background-size: cover;
+	background-image: url('../images/banner/bg_01.jpg');
+	background-size: contain;
 }
 .clv_team_wrapper{
 	padding-top: 88px;
@@ -1623,33 +1622,89 @@ ul{
 	margin-top: 25px;
 }
 .clv_team_wrapper .team_section .team_block{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.07);
 }
 .clv_team_wrapper .team_section .team_block .team_image{
 	position: relative;
-	overflow: hidden;
-	border-radius: 50%;
-	background-color: #657008;
-	width: 120px;
-	height: 118px;
-	transition: 2s;
-	padding: 5px;
-	
 }
-.clv_team_wrapper .team_section .team_block .team_image:hover{
-	transform: scale();
+.clv_team_wrapper .team_section .team_block .team_details{
+	margin-bottom: -47px;
+    transform: translateY(0px);
+	transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;
 }
-
-
-
-
-
-
-
+.clv_team_wrapper .team_section .team_block:hover .team_details{
+	transform: translateY(-60px);
+}
+.clv_team_wrapper .team_section .team_block .team_image .social_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0; 
+	bottom: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-60px);
+	z-index: -1;
+	background-color: rgba(254, 192, 7, 0.90);
+	transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;
+}
+.clv_team_wrapper .team_section .team_block:hover .team_image .social_overlay{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+	z-index: 1;
+}
+.clv_team_wrapper .team_section .team_block .team_image .social_overlay p{
+	font-size: 16px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+.clv_team_wrapper .team_section .team_block .team_image .social_overlay ul > li{
+	display: inline-block;
+	margin: 0px 10px;
+}
+.clv_team_wrapper .team_section .team_block .team_image .social_overlay ul > li > a{
+	display: inline-block;
+	font-size: 18px;
+	color: #ffffff;
+}
+.clv_team_wrapper .team_section .team_block .team_details .team_name{
+	text-align: center;
+	padding: 14px 0px 15px;
+	background-color: #ffffff;
+}
+.clv_team_wrapper .team_section .team_block .team_details .team_name h3{
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 3px;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+.clv_team_wrapper .team_section .team_block .team_details .team_name p{
+	color: #fec007;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+.clv_team_wrapper .team_section .team_block .team_details .team_name span{
+	display: block;
+    width: 50px;
+    height: 2px;
+	opacity: 0;
+    background-color: #fec007;
+    margin: 15px auto 10px;
+	transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;
+}
+.clv_team_wrapper .team_section .team_block:hover .team_details .team_name span{
+	opacity: 1;
+}	
 /********************************************************
 12. team end
 *******************************************************/
