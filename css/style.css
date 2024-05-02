@@ -1691,6 +1691,7 @@ ul{
 .clv_team_wrapper .team_section .team_block .team_details .team_name p{
 	color: #f7941d;
 	margin-bottom: 5px;
+	padding: 10px 12px;
 	text-transform: capitalize;
 }
 .clv_team_wrapper .team_section .team_block .team_details .team_name span{
@@ -1702,6 +1703,7 @@ ul{
     margin: 15px auto 10px;
 	transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;
 }
+
 .clv_team_wrapper .team_section .team_block:hover .team_details .team_name span{
 	opacity: 1;
 }	
