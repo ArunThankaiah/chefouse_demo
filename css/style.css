@@ -947,7 +947,7 @@ ul{
 6. about farm start
 *******************************************************/
 .index_v1 .about_farm_wrapper{
-	background: rgba(0,0,0,0.9);
+	/* background: rgba(0,0,0,0.9); */
 	background-size: contain;
 }
 .about_farm_wrapper .about_content{
@@ -1201,7 +1201,7 @@ ul{
 9. shop start
 *******************************************************/
 .index_v1 .clv_shop_wrapper{
-	background: rgba(0,0,0,0.9);
+	/* background: rgba(0,0,0,0.9); */
 	background-size: contain;
 }
 .clv_shop_wrapper{
@@ -6833,7 +6833,7 @@ ul{
 /*Breadcrumb Start*/
 .breadcrumb_wrapper{
 	position: relative;
-	background: url('https://via.placeholder.com/1920x160') no-repeat center;
+	background: url('../images/banner/001.jpg') no-repeat center;
 	background-size: cover;
 	padding: 63px 0px 57px;
 	z-index: 1;
