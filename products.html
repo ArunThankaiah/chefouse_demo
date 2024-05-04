@@ -21,6 +21,8 @@
         <link rel="stylesheet" type="text/css" href="css/range.css">
         <link rel="stylesheet" type="text/css" href="css/nice-select.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="./css/swiper.css">
         <!-- Favicon Link -->
         <link rel="shortcut icon" type="image/png" href="./images/nav-lgo/147x147.png">
     </head>
@@ -136,7 +138,7 @@
                                     </li>
                                     <li><a href="about.html">about us</a></li>
 										<li><a href="products.html">Product</a></li>
-										<li><a href="service.html">Service</a></li>
+										<!-- <li><a href="service.html">Service</a></li> -->
                                     <!-- <li><a href="gallery.html">gallery</a></li> -->
                                     <!-- <li>
                                         <a href="javascript:;">blog</a>
@@ -254,129 +256,30 @@
                 </div>
             </div>
         </div>
-        <div class="breadcrumb_block">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li>shop category</li>
-            </ul>
-        </div>
+       
     </div>
     <!--Produst List-->
     <div class="products_wrapper clv_section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="product_sidebar">
-                        <div class="product_block">
-                            <div class="sidebar_heading">
-                                <h3>search</h3>
-                                <img src="images/footer_underline.png" alt="image">
-                            </div>
-                            <div class="sidebar_search">
-                                <input type="text" placeholder="Search here">
-                                <a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <div class="product_block">
-                            <div class="sidebar_heading">
-                                <h3>product categories</h3>
-                                <img src="images/footer_underline.png" alt="image">
-                            </div>
-                            <div class="product_category">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" id="cat1" checked>
-                                        <label for="cat1">all<span>(16)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="cat2">
-                                        <label for="cat2">Organic Farming<span>(12)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="cat3">
-                                        <label for="cat3">Organic Green Bell Pepper<span>(156)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="cat4">
-                                        <label for="cat4">Permaculture<span>(260)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="cat5">
-                                        <label for="cat5">Precision Farming<span>(96)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="cat6">
-                                        <label for="cat6">Conservation Agriculture<span>(12)</span></label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product_block">
-                            <div class="sidebar_heading">
-                                <h3>filter by price</h3>
-                                <img src="images/footer_underline.png" alt="image">
-                            </div>
-                            <div class="ds_progress_rangeslider Range_slider">
-                                <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"> 
-                                <div class="ui-slider-range ui-corner-all ui-widget-header"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span></div>
-                                
-                                <div class="price_range"><p><span id="amount"></span></p></div>
-                                
-                            </div>
-                        </div>
-                        <div class="product_block">
-                            <div class="sidebar_heading">
-                                <h3>discount</h3>
-                                <img src="images/footer_underline.png" alt="image">
-                            </div>
-                            <div class="product_category">
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" id="dis1" checked>
-                                        <label for="dis1">less than 20%<span>(16)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="dis2">
-                                        <label for="dis2">20% or more<span>(12)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="dis3">
-                                        <label for="dis3">30% or more<span>(156)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="dis4">
-                                        <label for="dis4">50% or more<span>(260)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="dis5">
-                                        <label for="dis5">70% or more<span>(96)</span></label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="dis6">
-                                        <label for="dis6">80% or more<span>(12)</span></label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row justify-content-center">
+              
                 <div class="col-lg-9 col-md-9">
                     <div class="product_section">
-                        <div class="ads_section"><img src="https://via.placeholder.com/870x296" alt="image"></div>
+                        <div class="ads_section">
+                            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+                            centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                            <swiper-slide><img src="./images/pro/001.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./images/pro/002.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./images/pro/003.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./images/pro/004.jpg" alt=""></swiper-slide>
+                            <swiper-slide><img src="./images/pro/005.jpg" alt=""></swiper-slide>
+                            
+                          </swiper-container>
+                        </div>
                     </div>
                     <div class="product_list_section">
                         <div class="product_list_filter">
                             <ul>
-                                <li>
-                                    <p>showing <span>1-6 of 9</span> result</p>
-                                </li>
-                                <li>
-                                    <select>
-                                        <option value="sort by popularity">sort by popularity</option>
-                                        <option value="sort by price">sort by price</option>
-                                        <option value="sort by category">sort by category</option>
-                                    </select>
-                                </li>
                                 <li>
                                     <ul class="list_view_toggle">
                                         <li><span>view style</span></li>
@@ -411,15 +314,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
-                                            <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <!-- <span class="product_label">30% off</span> -->
+                                            <div class="org_product_image"><img src="./images/pro/cart/001.jpg" alt="image"></div>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -449,15 +352,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
-                                            <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <!-- <span class="product_label">30% off</span> -->
+                                            <div class="org_product_image"><img src="./images/pro/cart/002.jpg" alt="image"></div>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -487,15 +390,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
-                                            <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <!-- <span class="product_label">30% off</span> -->
+                                            <div class="org_product_image"><img src="./images/pro/cart/003.jpg" alt="image"></div>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -525,15 +428,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
+                                            <!-- <span class="product_label">30% off</span> -->
                                             <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -563,15 +466,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
+                                            <!-- <span class="product_label">30% off</span> -->
                                             <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -601,15 +504,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
+                                            <!-- <span class="product_label">30% off</span> -->
                                             <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -639,15 +542,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
+                                            <!-- <span class="product_label">30% off</span> -->
                                             <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -677,15 +580,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
+                                            <!-- <span class="product_label">30% off</span> -->
                                             <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -715,15 +618,15 @@
                                 <li>
                                     <div class="product_item_block">
                                         <div class="org_product_block">
-                                            <span class="product_label">30% off</span>
+                                            <!-- <span class="product_label">30% off</span> -->
                                             <div class="org_product_image"><img src="https://via.placeholder.com/159x170" alt="image"></div>
-                                            <h4>farm sprayer</h4>
-                                            <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3>
-                                            <a href="javascript:;">add to cart</a>
+                                            <h4>Lorem</h4>
+                                            <!-- <h3><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h3> -->
+                                            <a href="contact.html">Order Now</a>
                                         </div>
                                         <div class="content_block">
                                             <div class="product_price_box"> 
-                                                <h3>farm sprayer</h3>            
+                                                <h3>Lorem</h3>            
                                                 <h5><span><i class="fa fa-usd" aria-hidden="true"></i></span>25</h5>   
                                             </div>
                                             <p>Farm & Garden</p>
@@ -752,7 +655,7 @@
                                 </li>  
                             </ul>
                         </div>
-                        <div class="blog_pagination_section">
+                        <!-- <div class="blog_pagination_section">
                             <ul>
                                 <li class="blog_page_arrow">
                                     <a href="javascript:;">
@@ -776,7 +679,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -924,67 +827,68 @@
             </div>
         </div>
     </div>
-    <!--Footer-->
-    <div class="clv_footer_wrapper clv_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-lg-3">
-                    <div class="footer_block">
-                        <div class="footer_logo"><a href="javascript:;"><img src="images/nav-lgo/footer-logo.png" alt="image" /></a></div>
-                    </div>
-                </div>
-                
-                
-                <div class="col-md-3 col-lg-3">
-                    <div class="footer_block">
-                        <div class="footer_heading">
-                            <h4>Location</h4>
-                            <img src="images/footer_underline.png" alt="image" />
-                        </div>
-                        <div class="d-flex ">
-                            <p><i class="fa fa-map-pin pr-2"></i></p>
-                            <p>HiLITE Business Park, Bypass Road, Palazhi Junction, Kozhikode, Kerala 673014</p>
-                        </div>
-                        <h6>Call us</h6>
-                        <p class=""><i class="fa fa-phone pr-2" aria-hidden="true"></i>+91 80 86 99 99 03 </p>
-                        <p><i class="fa fa-phone pr-2" aria-hidden="true"></i>+91 80 86 99 99 04 </p>
-                        
-                    </div>
-                </div>
+   <!--Footer-->
+		<div class="clv_footer_wrapper clv_section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-lg-3">
+						<div class="footer_block py-3">
+							<div class="footer_logo"><a href="javascript:;"><img src="images/nav-lgo/footer-logo.png" alt="image" /></a></div>
+							
+						</div>
+					</div>
+					
+					
+					<div class="col-md-3 col-lg-3">
+						<div class="footer_block">
+							<div class="footer_heading">
+								<h4>Location</h4>
+								<img src="images/footer_underline.png" alt="image" />
+							</div>
+							<div class="d-flex ">
+								<p><i class="fa fa-map-pin pr-2"></i></p>
+								<p>HiLITE Business Park, Bypass Road, Palazhi Junction, Kozhikode, Kerala 673014</p>
+							</div>
+							
+							
+						</div>
+					</div>
 
-                <div class="col-md-3 col-lg-3">
-                    <div class="footer_block">
-                        <div class="footer_heading">
-                            <h4>support</h4>
-                            <img src="images/footer_underline.png" alt="image" />
-                        </div>
-                        <ul class="useful_links">
-                            <li><a href="index.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Home</a></li>
-                            <li><a href="about.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>About US</a></li>
-                            <li><a href="products.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Products</a></li>
-                            <li><a href="service.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Service</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
+					<div class="col-md-3 col-lg-3">
+						<div class="footer_block">
+							<div class="footer_heading">
+								<h4>support</h4>
+								<img src="images/footer_underline.png" alt="image" />
+							</div>
+							<ul class="useful_links">
+								<li><a href="index.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Home</a></li>
+								<li><a href="about.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>About US</a></li>
+								<li><a href="products.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Products</a></li>
+								<li><a href="service.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>Service</a></li>
+								
+							</ul>
+						</div>
+					</div>
 
-                <div class="col-md-3 col-lg-3">
-                    <div class="footer_block">
-                        <div class="footer_heading">
-                            <h4>Email</h4>
-                            <img src="images/footer_underline.png" alt="image" />
-                        </div>
-                        <p><i class="fa fa-envelope pr-2" aria-hidden="true"></i>admin@chefouse.com  </p>
-                        <p><i class="fa fa-envelope pr-2" aria-hidden="true"></i>office@chefouse.com  </p>
-                    </div>
-                </div>
-                
-                
-            </div>
-            
-        </div>
-        <img class="foot_girl" src="https://via.placeholder.com/398x529" alt="image">
-    </div>
+					<div class="col-md-3 col-lg-3">
+						<div class="footer_block">
+							<div class="footer_heading">
+								<h4>Contact Us</h4>
+								<img src="images/footer_underline.png" alt="image" />
+							</div>
+							<p><i class="fa fa-envelope pr-2" aria-hidden="true"></i>admin@chefouse.com  </p>
+							<p><i class="fa fa-envelope pr-2" aria-hidden="true"></i>office@chefouse.com  </p>
+							<p><i class="fa fa-phone pr-2" aria-hidden="true"></i>+91 80 86 99 99 03 </p>
+							<p><i class="fa fa-phone pr-2" aria-hidden="true"></i>+91 80 86 99 99 04 </p>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+			</div>
+			<img class="foot_girl" src="https://via.placeholder.com/398x529" alt="image">
+		</div>
     <!--Copyright-->
     <div class="clv_copyright_wrapper   ">
         <p>copyright &copy; 2024 <a href="javascript:;">Chefouse</a> all right reserved. Designed and Developed by <a href="javascript:;">Atbott Solutions</a> </p>
@@ -1034,5 +938,8 @@
 <script src="js/revolution.extension.slideanims.min.js"></script>
 <script src="js/revolution.extension.video.min.js"></script>
 <script src="js/custom.js"></script>
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </body>
 </html>

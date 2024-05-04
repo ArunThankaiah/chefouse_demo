@@ -800,6 +800,7 @@ ul{
 }
 .clv_about_wrapper .about_content .para_content p:first-child{
 	margin-bottom: 24px;
+	
 }
 .clv_about_wrapper .about_content .about_heading h2{
 	font-size: 42px;
@@ -4572,7 +4573,7 @@ ul{
 }
 .garden_service2_section .service2_block {
 	position: relative;
-	background: url('https://via.placeholder.com/390x276') no-repeat center;
+	background: url('../images/product/p-bg-01.jpg') no-repeat center;
 	background-size: cover;
 	text-align: center;
 	padding: 40px 20px;
@@ -4755,7 +4756,7 @@ ul{
 	padding-right: 20px;
 	display: inline-block;
 	color: #ffffff;
-	background-color: #fecf3f;
+	background-color: #f39c11;
 	text-transform: uppercase;
 	position: absolute;
 	top: 30px;
@@ -5567,7 +5568,7 @@ ul{
 	top: 30px;
 	left: 0;
 	padding: 5px 10px;
-	background-color: #fecf3f;
+	background-color: #f39c11;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -5578,8 +5579,8 @@ ul{
 	bottom: 0;
 	left: 100%;
 	display: inline-block;
-	border-top: 15px solid #fecf3f;
-	border-bottom: 15px solid #fecf3f;
+	border-top: 15px solid #f39c11;
+	border-bottom: 15px solid #f39c11;
 	border-right: 10px solid transparent;
 }
 .org_product_block .org_product_image{
@@ -6540,7 +6541,7 @@ ul{
 	left: 0px;
 	height: 50px;
 	width: 92px;
-	background-color: #fecf3f;
+	background-color: #f39c11;
 	border-radius: 50em;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
@@ -7648,7 +7649,8 @@ ul{
 	text-align: left;
 }
 .product_list_filter > ul > li:last-child{
-	text-align: right;
+	text-align: left;
+	padding: 4px 0px;
 }
 .product_list_filter ul.list_view_toggle > li{
 	display: inline-block;
