@@ -51,9 +51,9 @@ ul{
 .padding-0{
 	padding: 0 !important;
 }
-.clv_section{
+/* .clv_section{
 	padding: 100px 0px;
-}
+} */
 .clv_heading{
 	text-align: center;
 	margin-bottom: 30px;
@@ -751,6 +751,7 @@ ul{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	
 }
 .clv_banner_slider .slider_arrow > svg > path{
 	fill: #ffffff;
@@ -771,11 +772,12 @@ ul{
 }
 .add_social_media a i{
 	padding: 10px;
+	transition: 0.3s;
 }
 .add_social_media a i:hover{
 	background:#f7941d;
-	color: #657008;
 	border-radius: 50%;
+	transform: scale(1.2);
 	
 	
 }
@@ -789,15 +791,43 @@ ul{
 	/* background-image: url('../images/banner/bg_01.jpg'); */
 	background-size: contain;
 }
+.clv_about_wrapper .about_img{
+	animation: imgslid 3s;
+	
+}
 .clv_about_wrapper .about_img img{
 	border-radius: 10px;
+	
 }
+@keyframes imgslid{
+	0%{
+		transform: translate(-100%);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+
 .clv_about_wrapper .about_content{
 	padding: 50px 0px;
+	animation: abtcont 3s;
+	
+	
+}
+@keyframes abtcont{
+	0%{
+		transform: translate(100%);
+	}
+	100%{
+		transform: translate(0);
+	}
 }
 .clv_about_wrapper .about_content .about_heading{
 	margin-bottom: 20px;
+	
 }
+
+
 .clv_about_wrapper .about_content .para_content p:first-child{
 	margin-bottom: 24px;
 	
@@ -1609,13 +1639,13 @@ ul{
 /********************************************************
 12. team start
 *******************************************************/
-.index_v1 .clv_team_wrapper{
-	/* background-image: url('../images/banner/bg_01.jpg'); */
+/* .index_v1 .clv_team_wrapper{
+	background-image: url('../images/banner/bg_01.jpg');
 	background-size: contain;
-}
-.clv_team_wrapper{
+} */
+/* .clv_team_wrapper{
 	padding-top: 88px;
-}
+} */
 .clv_team_wrapper .container{
 	max-width: 1200px;
 }
@@ -1627,9 +1657,24 @@ ul{
 	overflow: hidden;
 	border-radius: 10px;
 	box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.07);
+	animation: bounce  2s;
+	
 }
+@keyframes bounce {
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+        transform: translate(0%);
+        
+    }
+  }
 .clv_team_wrapper .team_section .team_block .team_image{
 	position: relative;
+	transition-duration: 0.3s;
+}
+.clv_team_wrapper .team_section .team_block .team_image:hover{
+	transform: scale(1.2);
 }
 .clv_team_wrapper .team_section .team_block .team_details{
 	margin-bottom: -47px;
@@ -1902,6 +1947,7 @@ ul{
 }
 .clv_footer_wrapper .footer_block .useful_links > li > a:hover{
 	color: #f7941d;
+	padding-left: 10px;
 }
 .clv_footer_wrapper .footer_block .useful_links > li > a > span{
 	margin-right: 10px;
@@ -4557,9 +4603,10 @@ ul{
 	color: #333333;
 }
 /*Garden Testimonial End*/
+
 /*Garden Service 2 Start*/
 .garden_service2_wrapper {
-	padding-top: 88px;
+	padding-top: 50px;
 }
 .garden_service2_section {
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.06);
@@ -6819,7 +6866,7 @@ ul{
 22. About Page start
 *******************************************************/  
 .about_page .clv_about_wrapper{
-	padding-top: 125px;
+	padding-top: 75px;
 } 
 .about_page .clv_about_product .about_product_contect .about_product_contact{
 	background-color: #f7941d;
