@@ -24,6 +24,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Favicon Link -->
     <link rel="shortcut icon" type="image/png" href="./images/nav-lgo/147x147.png">
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon Link -->
 </head>
 <body class="index_v1">
 	<div class="preloader_wrapper">
@@ -263,12 +266,21 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="about_img">
+						<div class="about_img" 
+						data-aos="fade-right"
+						data-aos-delay="50"
+    					data-aos-duration="1000"
+						>
 							<img src="./images/banner/about-abt.jpg" alt="image" />
 						</div>
 					</div>
 					<div class="col-md-6 px-5">
-						<div class="about_content">
+						<div class="about_content"
+						data-aos="fade-left"
+						data-aos-delay="30"
+   						data-aos-duration="1000"
+						
+						>
 							<div class="about_heading">
 								<h2>About <span>Chefouse</span></h2>
 								<h6 class="text-dark">Chefouse Delicious treats, crafted with wholesome ingredients</h6>
@@ -303,7 +315,16 @@
 		</div>
 
 		<!-- vision misson -->
-		<div class="garden_service2_wrapper clv_section mb-5">
+		<div class="garden_service2_wrapper clv_section mb-5"
+		data-aos="fade-up"
+		data-aos-offset="200"
+   		data-aos-delay="50"
+   		data-aos-duration="1000"
+   		data-aos-easing="ease-in-out"
+   		data-aos-mirror="true"
+   		data-aos-once="false"
+   		data-aos-anchor-placement="top-center"
+	>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-6 col-md-6">
@@ -857,5 +878,10 @@
 <script src="js/revolution.extension.slideanims.min.js"></script>
 <script src="js/revolution.extension.video.min.js"></script>
 <script src="js/custom.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+  </script>
 </body>
 </html>

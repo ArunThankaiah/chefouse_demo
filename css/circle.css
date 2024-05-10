@@ -39,17 +39,17 @@
   left: 50%;
   position: relative;
  transition-duration: 0.3s;
- animation: bounce 2s ;
+ /* animation: bounce 2s ; */
   
 }
-@keyframes bounce{
+/* @keyframes bounce{
   0%{
     transform: translateY(-100%);
   }
   100%{
     transform: translate(0);
   }
-}
+} */
 
 #infographic article:hover{
   transform: translateX(40px);
